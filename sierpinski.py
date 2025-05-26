@@ -20,11 +20,11 @@ class Sierpinski(State):
         #inicializando janela
         pyxel.mouse(True)
         #carregando fonte de texto
-        self.fonte5 = pyxel.Font("/home/hacdan/Documents/Linux/Programacao/Python/Projetos/Pyxel/FRACTALS_1.0/Assets/Fonts/5x8.bdf")
-        self.fonte8 = pyxel.Font("/home/hacdan/Documents/Linux/Programacao/Python/Projetos/Pyxel/FRACTALS_1.0/Assets/Fonts/VictoriaBold-8.bdf")
-        self.fonte16 = pyxel.Font("/home/hacdan/Documents/Linux/Programacao/Python/Projetos/Pyxel/FRACTALS_1.0/Assets/Fonts/b16_b.bdf")
-        self.fonte18 = pyxel.Font("/home/hacdan/Documents/Linux/Programacao/Python/Projetos/Pyxel/FRACTALS_1.0/Assets/Fonts/helvB18.bdf")
-        self.fonte24 = pyxel.Font("/home/hacdan/Documents/Linux/Programacao/Python/Projetos/Pyxel/FRACTALS_1.0/Assets/Fonts/helvB24.bdf")
+        self.fonte5 = pyxel.Font("Assets/Fonts/5x8.bdf")
+        self.fonte8 = pyxel.Font("Assets/Fonts/VictoriaBold-8.bdf")
+        self.fonte16 = pyxel.Font("Assets/Fonts/b16_b.bdf")
+        self.fonte18 = pyxel.Font("Assets/Fonts/helvB18.bdf")
+        self.fonte24 = pyxel.Font("Assets/Fonts/helvB24.bdf")
 
         #declarando valores iniciais do fractal
         self.iterations = 100 #numero de passos a serem realizados para gerar o fractal
