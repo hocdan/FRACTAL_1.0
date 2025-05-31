@@ -89,6 +89,7 @@ class Koch(State):
             linha1 = Linha(Ponto(self.origem.posX-300, self.origem.posY+200), Ponto(self.origem.posX, self.origem.posY-319.61))
             linha2 = Linha(Ponto(self.origem.posX, self.origem.posY-319.61), Ponto(self.origem.posX+300, self.origem.posY+200))
             linha3 = Linha(Ponto(self.origem.posX+300, self.origem.posY+200), Ponto(self.origem.posX-300, self.origem.posY+200))
+            #guardando linhas no vetor da aplicacao principal para posterior renderizacao
             self.linhas.append(linha1)
             self.linhas.append(linha2)
             self.linhas.append(linha3)
@@ -106,6 +107,7 @@ class Koch(State):
                 #adicionando linhas na nova lista de linhas
                 lista2.append(linhas[0])
                 lista2.append(linhas[1])
+                #guardando linhas no vetor da aplicacao principal para posterior renderizacao
                 self.linhas.append(linhas[0])
                 self.linhas.append(linhas[1])
             return lista2
@@ -121,7 +123,7 @@ class Koch(State):
         self.fonte24 = pyxel.Font("/home/hacdan/Documents/Linux/Programacao/Python/Projetos/Pyxel/FRACTALS_1.0/Assets/Fonts/helvB24.bdf")
 
         #declarando valores iniciais do fractal
-        self.iterations = 2 #numero de passos a serem realizados para gerar o fractal
+        self.iterations = 1 #numero de passos a serem realizados para gerar o fractal
         self.linhas = [] #lista de todas as linhas geradas pela recursao do fractal
         self.cor_fractal = pyxel.COLOR_CYAN #cor das linhas desenhadas do fractal
         self.origem = Ponto(550, 350) #ponto (0,0) do plano cartesiano com base nas dimensoes da tela (900x700)
